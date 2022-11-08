@@ -15,11 +15,12 @@ public class Electrodomestico {
     public Electrodomestico() {
     }
 
-    public Electrodomestico(String color, String consumo, Integer peso, Integer precio) {
+    public Electrodomestico(String color, String consumo, Integer peso) {
         this.color = color;
         this.consumo = consumo;
         this.peso = peso;
-        this.precio = precio;
+        this.precio = 1000;
+        
         comprobarConsumoEnergetico(this.consumo);
         comprobarColor(this.color);
     }
